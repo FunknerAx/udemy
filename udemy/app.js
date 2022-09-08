@@ -9,6 +9,7 @@ const shopRouter = require("./routes/shop");
 
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} ${req.method} ${req.url}`);
+  console.log("test");
   next();
 });
 
